@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tareas</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="./index.html" class="header__title">Tareas</a>
+            <hr class="line">
+        </header>
+        <form class="form" id="formTasks">
+            <div class="form__titledate">
+                <input type="text" class="form__text" id="inputTitle" placeholder="Nombre de la tarea...">
+                <input type="date" class="form__date" id="inputDate">
+            </div>
+            <!-- <textarea rows="4" placeholder="Escriba la descripción de la tarea..." class="form__description" id="inputDescription"></textarea> -->
+            <button type="submit" class="form__button" id="buttonSaveTask">Guardar tarea</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="tasks" id="printTasks">
+            <h2 class="tasks__title">Tareas</h2>
+            <!-- Tareas -->
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

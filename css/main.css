@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 40vw;
+    margin: 20px auto;
+}
+
+.header {
+    background: #090911;
+    border-radius: 10px 10px 0 0;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.line {
+    margin: auto;
+    border: 1px solid #222222;
+    width: 50%;
+}
+
+.header__title:hover {
+    transition: ease-in 300ms;
+    color: #16d154;
+    text-decoration: underline;
+}
+
+.form {
+    background: linear-gradient(180deg, #090911 0%, #0f0f15 100%);
+    padding: .5rem 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.form__titledate {
+    margin-bottom: 10px;
+}
+
+.form__text,
+.form__date {
+    font-family: 'Varela Round';
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.form__text:focus {
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 80%, rgba(27, 206, 87, .1) 100%);
+    border-bottom: 2px solid #16d154;
+    outline: none;
+}
+
+.form__date:focus {
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 80%, rgba(27, 206, 87, .1) 100%);
+    border-bottom: 2px solid #16d154;
+    outline: none;
+}
+
+.form__button {
+    border: none;
+    padding: .5rem 5rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Varela Round';
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 500ms;
+}
+
+.form__button:hover {
+    background: #16d154;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* TAREAS GURADADAS EN EL LOCAL STORAGE */
+.tasks__title {
+    /* color: #fff; */
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tasks__info {
+    background: #090911;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tasks__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks__header-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.tasks__header-title i {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.line2 {
+    width: 100%;
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.tasks__body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
+.tasks__body-delete {
+    color: #000;
+    font-size: 1rem;
+    text-decoration: none;
+    background: #ebe4e4;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 500ms;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tasks__body-delete:hover {
+    background: #bf1e1e;
+    color: #fff;
+}
+
+.tasks__body-check {
+    border: none;
+    width: 25px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 95vw;
+    }
+
+    .form__titledate {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__text,
+    .form__date {
+        width: 100%;
+    }
+
+    .tasks__header {
+        flex-direction: column;
+    }
+
+    .form__button {
+        padding: .5rem 2rem;
+    }
+}
